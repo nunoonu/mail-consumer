@@ -24,11 +24,11 @@ func NewHTTPServiceParams() *HTTPServiceParams {
 
 func NewHTTPService(
 	params *HTTPServiceParams,
-	a *gin.Engine,
+	app *gin.Engine,
 ) *HTTPService {
 	return &HTTPService{
 		params: *params,
-		app:    a,
+		app:    app,
 	}
 }
 
