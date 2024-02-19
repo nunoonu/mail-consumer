@@ -24,7 +24,7 @@ func NewMailParams() *MailParams {
 		Host:     "smtp.gmail.com",
 		Port:     587,
 		From:     "ph.chunnapiyar@gmail.com",
-		Password: "qwol yvcr arcc mxfx",
+		Password: "XXXXXXXX",
 		To:       "nu__panupong@hotmail.com",
 		Subject:  "File uploading service",
 		Body:     "This is an attachment.",
