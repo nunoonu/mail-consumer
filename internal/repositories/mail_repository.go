@@ -39,11 +39,6 @@ func NewMailRepository(mp *MailParams) ports.MailRepository {
 	return &mailRepository{params: mp}
 }
 
-type Mail struct {
-	FileName string
-	File     []byte
-}
-
 func (m mailRepository) Send(_ context.Context, fileName string, file []byte) error {
 	p := m.params
 	gm := gomail.NewMessage()
